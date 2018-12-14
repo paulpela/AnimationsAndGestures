@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E5D8A6EF21C3D09E00FFD90D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D8A6EE21C3D09E00FFD90D /* AppDelegate.swift */; };
-		E5D8A6F121C3D09E00FFD90D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D8A6F021C3D09E00FFD90D /* ViewController.swift */; };
 		E5D8A6F421C3D09E00FFD90D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5D8A6F221C3D09E00FFD90D /* Main.storyboard */; };
 		E5D8A6F621C3D0A100FFD90D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5D8A6F521C3D0A100FFD90D /* Assets.xcassets */; };
 		E5D8A6F921C3D0A100FFD90D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5D8A6F721C3D0A100FFD90D /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		E5D8A6EB21C3D09E00FFD90D /* AnimationsAndGestures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationsAndGestures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5D8A6EE21C3D09E00FFD90D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E5D8A6F021C3D09E00FFD90D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E5D8A6F321C3D09E00FFD90D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E5D8A6F521C3D0A100FFD90D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5D8A6F821C3D0A100FFD90D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +52,21 @@
 		E5D8A6ED21C3D09E00FFD90D /* AnimationsAndGestures */ = {
 			isa = PBXGroup;
 			children = (
-				E5D8A6EE21C3D09E00FFD90D /* AppDelegate.swift */,
-				E5D8A6F021C3D09E00FFD90D /* ViewController.swift */,
+				E5D8A70021C3D12400FFD90D /* Supporting Files */,
 				E5D8A6F221C3D09E00FFD90D /* Main.storyboard */,
+			);
+			path = AnimationsAndGestures;
+			sourceTree = "<group>";
+		};
+		E5D8A70021C3D12400FFD90D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5D8A6EE21C3D09E00FFD90D /* AppDelegate.swift */,
 				E5D8A6F521C3D0A100FFD90D /* Assets.xcassets */,
 				E5D8A6F721C3D0A100FFD90D /* LaunchScreen.storyboard */,
 				E5D8A6FA21C3D0A100FFD90D /* Info.plist */,
 			);
-			path = AnimationsAndGestures;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +140,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5D8A6F121C3D09E00FFD90D /* ViewController.swift in Sources */,
 				E5D8A6EF21C3D09E00FFD90D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +288,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9UGPKX3A64;
-				INFOPLIST_FILE = AnimationsAndGestures/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AnimationsAndGestures/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +306,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9UGPKX3A64;
-				INFOPLIST_FILE = AnimationsAndGestures/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AnimationsAndGestures/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
