@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EUa-gZ-TYN">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pan Gesture 01-->
+        <scene sceneID="Atu-dH-A59">
+            <objects>
+                <viewController id="EUa-gZ-TYN" customClass="PanGesture01ViewController" customModule="AnimationsAndGestures" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yDW-kD-Sdw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fIx-d8-ceD">
+                                <rect key="frame" x="155.5" y="301.5" width="64" height="64"/>
+                                <color key="backgroundColor" red="0.75615368150684936" green="0.21045525670984069" blue="0.11481089850576223" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="u0L-uL-ea9"/>
+                                    <constraint firstAttribute="width" constant="64" id="zby-jM-YTt"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="amT-Fr-UWi" appends="YES" id="saJ-mq-bO5"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="fIx-d8-ceD" firstAttribute="centerY" secondItem="yDW-kD-Sdw" secondAttribute="centerY" id="4qV-44-sm5"/>
+                            <constraint firstItem="fIx-d8-ceD" firstAttribute="centerX" secondItem="yDW-kD-Sdw" secondAttribute="centerX" id="TuA-lo-0PO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GzK-U6-TpI"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pan Gesture 01" id="hG1-jh-lfR"/>
+                    <connections>
+                        <outlet property="square" destination="fIx-d8-ceD" id="coo-NG-C5j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Odc-Y9-AWu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="amT-Fr-UWi">
+                    <connections>
+                        <action selector="squareDragged:" destination="EUa-gZ-TYN" id="vpj-ph-ni1"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1088.8" y="162.3688155922039"/>
+        </scene>
+    </scenes>
+</document>

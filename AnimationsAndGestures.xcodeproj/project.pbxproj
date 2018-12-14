@@ -11,6 +11,8 @@
 		E5D8A6F421C3D09E00FFD90D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5D8A6F221C3D09E00FFD90D /* Main.storyboard */; };
 		E5D8A6F621C3D0A100FFD90D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5D8A6F521C3D0A100FFD90D /* Assets.xcassets */; };
 		E5D8A6F921C3D0A100FFD90D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5D8A6F721C3D0A100FFD90D /* LaunchScreen.storyboard */; };
+		E5D8A70421C3D21400FFD90D /* UIPanGestureRecognizer01.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5D8A70321C3D21400FFD90D /* UIPanGestureRecognizer01.storyboard */; };
+		E5D8A70621C3D30300FFD90D /* PanGesture01ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D8A70521C3D30300FFD90D /* PanGesture01ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		E5D8A6F521C3D0A100FFD90D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5D8A6F821C3D0A100FFD90D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5D8A6FA21C3D0A100FFD90D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5D8A70321C3D21400FFD90D /* UIPanGestureRecognizer01.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIPanGestureRecognizer01.storyboard; sourceTree = "<group>"; };
+		E5D8A70521C3D30300FFD90D /* PanGesture01ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanGesture01ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				E5D8A70021C3D12400FFD90D /* Supporting Files */,
-				E5D8A6F221C3D09E00FFD90D /* Main.storyboard */,
+				E5D8A70121C3D1EF00FFD90D /* Gestures */,
 			);
 			path = AnimationsAndGestures;
 			sourceTree = "<group>";
@@ -61,12 +65,30 @@
 		E5D8A70021C3D12400FFD90D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E5D8A6F221C3D09E00FFD90D /* Main.storyboard */,
 				E5D8A6EE21C3D09E00FFD90D /* AppDelegate.swift */,
 				E5D8A6F521C3D0A100FFD90D /* Assets.xcassets */,
 				E5D8A6F721C3D0A100FFD90D /* LaunchScreen.storyboard */,
 				E5D8A6FA21C3D0A100FFD90D /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E5D8A70121C3D1EF00FFD90D /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				E5D8A70221C3D1F900FFD90D /* UIPanGestureRecognizer01 */,
+			);
+			path = Gestures;
+			sourceTree = "<group>";
+		};
+		E5D8A70221C3D1F900FFD90D /* UIPanGestureRecognizer01 */ = {
+			isa = PBXGroup;
+			children = (
+				E5D8A70321C3D21400FFD90D /* UIPanGestureRecognizer01.storyboard */,
+				E5D8A70521C3D30300FFD90D /* PanGesture01ViewController.swift */,
+			);
+			path = UIPanGestureRecognizer01;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +152,7 @@
 				E5D8A6F921C3D0A100FFD90D /* LaunchScreen.storyboard in Resources */,
 				E5D8A6F621C3D0A100FFD90D /* Assets.xcassets in Resources */,
 				E5D8A6F421C3D09E00FFD90D /* Main.storyboard in Resources */,
+				E5D8A70421C3D21400FFD90D /* UIPanGestureRecognizer01.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5D8A70621C3D30300FFD90D /* PanGesture01ViewController.swift in Sources */,
 				E5D8A6EF21C3D09E00FFD90D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
