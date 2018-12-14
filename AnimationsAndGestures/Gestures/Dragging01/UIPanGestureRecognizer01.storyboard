@@ -10,14 +10,20 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Pan Gesture 01-->
+        <!--Dragging 01-->
         <scene sceneID="Atu-dH-A59">
             <objects>
-                <viewController id="EUa-gZ-TYN" customClass="PanGesture01ViewController" customModule="AnimationsAndGestures" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Dragging 01" id="EUa-gZ-TYN" customClass="PanGesture01ViewController" customModule="AnimationsAndGestures" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yDW-kD-Sdw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This one is simple: You can drag the square around." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTk-K2-6ag">
+                                <rect key="frame" x="63" y="120" width="249" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fIx-d8-ceD">
                                 <rect key="frame" x="155.5" y="301.5" width="64" height="64"/>
                                 <color key="backgroundColor" red="0.75615368150684936" green="0.21045525670984069" blue="0.11481089850576223" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -35,11 +41,13 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="fIx-d8-ceD" firstAttribute="centerY" secondItem="yDW-kD-Sdw" secondAttribute="centerY" id="4qV-44-sm5"/>
+                            <constraint firstItem="cTk-K2-6ag" firstAttribute="centerX" secondItem="yDW-kD-Sdw" secondAttribute="centerX" id="5Sb-AN-rEt"/>
                             <constraint firstItem="fIx-d8-ceD" firstAttribute="centerX" secondItem="yDW-kD-Sdw" secondAttribute="centerX" id="TuA-lo-0PO"/>
+                            <constraint firstItem="cTk-K2-6ag" firstAttribute="top" secondItem="GzK-U6-TpI" secondAttribute="top" constant="100" id="lWT-ht-RFe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GzK-U6-TpI"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Pan Gesture 01" id="hG1-jh-lfR"/>
+                    <navigationItem key="navigationItem" title="Dragging 01" id="hG1-jh-lfR"/>
                     <connections>
                         <outlet property="square" destination="fIx-d8-ceD" id="coo-NG-C5j"/>
                     </connections>
